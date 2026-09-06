@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
-import { STATS, TICKER_ITEMS } from "../data/portfolioData";
+import { STATS } from "../data/portfolioData";
 import { Magnetic } from "./Navbar";
 
 /* ------------------------------------------------------------------ */
