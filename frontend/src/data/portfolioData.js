@@ -12,11 +12,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
-import cppUdemyImg from "../assets/certificates/cpp-udemy.jpg";
-import deloitteImg from "../assets/certificates/deloitte.jpg";
-import quantiumImg from "../assets/certificates/quantium.jpg";
-import microsoftGenAiImg from "../assets/certificates/microsoft-genai.jpg";
-import scalerReactImg from "../assets/certificates/scaler-react.jpg";
+import cppUdemyImg from "../assets/certificates/cpp-udemy.png";
+import deloitteImg from "../assets/certificates/deloitte.png";
+import quantiumImg from "../assets/certificates/quantium.png";
+import microsoftGenAiImg from "../assets/certificates/microsoft-genai.png";
+import scalerReactImg from "../assets/certificates/scaler-react.png";
+import mcpIntroImg from "../assets/certificates/mcpIntroImg.png";
+import mcpAdvancedImg from "../assets/certificates/mcpAdvancedImg.png";
 
 export const NAV_ITEMS = [
   { id: "hero", label: "Home" },
@@ -43,10 +45,6 @@ export const SKILL_GROUPS = [
   { label: "Tooling", icon: GitBranch, items: ["Git", "GitHub", "Vite"] },
 ];
 
-export const TICKER_ITEMS = [
-  "React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Python",
-  "C++", "DSA", "Socket.io", "Git", "Pandas", "REST APIs",
-];
 
 export const PROJECTS = [
   {
@@ -54,58 +52,89 @@ export const PROJECTS = [
     title: "Huddle",
     desc: "Real-time MERN chat app with instant messaging, secure auth and a clean, responsive interface.",
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    link: "https://huddle-tgykr.sevalla.app/",
+    link: "https://huddle-orgg.netlify.app/",
     size: "large",
   },
+
   {
     index: "B",
-    title: "Global Mart",
-    desc: "Full e-commerce platform — browsing, filtering, cart and checkout, plus an admin panel to manage products.",
-    tags: ["React", "Node.js", "Express", "Arcjet"],
-    link: "https://global-mart-2ee2.onrender.com",
+    title: "Prospector",
+    desc: "AI-powered prospecting platform designed to help discover and manage potential leads.",
+    tags: ["AI", "React"],
+    link: "https://prospector-ai.netlify.app/",
     size: "small",
   },
+
   {
     index: "C",
+    title: "TaskLane",
+    desc: "Collaboration and classroom management platform for organizing tasks, assignments, communication and team-based workflows.",
+    tags: ["React", "Node.js", "MongoDB"],
+    link: "https://tasklane-org.netlify.app/",
+    size: "large",
+  },
+
+  {
+    index: "D",
+    title: "OpsMind",
+    desc: "AI-powered operations assistant with RAG capabilities for intelligent information retrieval and assistance.",
+    tags: ["AI", "RAG"],
+    link: "https://opsmindrag.netlify.app/",
+    size: "small",
+  },
+
+  {
+    index: "E",
     title: "Caffinity",
     desc: "A premium coffee-brand site with a polished UI, product showcase and smooth motion throughout.",
     tags: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://caffinity.onrender.com",
     size: "small",
   },
+
   {
-    index: "D",
+    index: "F",
     title: "Selective Repeat ARQ Simulator",
     desc: "Interactive visual simulator for the Selective-Repeat ARQ networking protocol — packets, ACKs and retransmission, live.",
     tags: ["JavaScript", "HTML", "CSS"],
     link: "https://selectiverepeatarq.vercel.app/",
     size: "large",
   },
+
   {
-    index: "E",
+    index: "G",
     title: "YouTube Clone",
     desc: "A high-fidelity, responsive front-end clone of the YouTube homepage, built from scratch in vanilla JS.",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://youtube-nine-woad.vercel.app/",
     size: "small",
   },
+
+
   {
-    index: "F",
-    title: "Portfolio (v1)",
-    desc: "An earlier personal portfolio built to showcase projects and skills — the predecessor to this one.",
-    tags: ["React", "Node.js", "Express"],
-    link: "https://tanmays-portfolio.onrender.com",
+    index: "H",
+    title: "Global Mart",
+    desc: "Full e-commerce platform — browsing, filtering, cart and checkout, plus an admin panel to manage products.",
+    tags: ["React", "Node.js", "Express", "Arcjet"],
+    link: "https://global-mart-2ee2.onrender.com",
     size: "small",
   },
 ];
-
 export const EXPERIENCE = [
+  {
+    role: "Associate L1 - Web Developer Intern",
+    org: "Infotact Solutions",
+    time: "Feb 2026 — May 2026 · 4 mos · Remote",
+    desc: "Worked as a Web Developer Intern, building and contributing to web development projects using modern web technologies.",
+  },
+
   {
     role: "Full Stack Development Intern",
     org: "Future Interns",
     time: "Nov 2025 — Dec 2025",
     desc: "Contributed to real-world development tasks following Agile practices.",
   },
+
   {
     role: "Python Instructor",
     org: "Samyak Computer Classes",
@@ -119,7 +148,7 @@ export const EDUCATION = [
     role: "B.Tech, Computer Engineering",
     org: "NMIMS Indore",
     time: "2024 — 2028",
-    desc: "CGPA 8.2 / 10",
+    desc: "CGPA 8.6 / 10",
   },
   {
     role: "Secondary Education",
@@ -133,33 +162,48 @@ export const CERTIFICATIONS = [
   {
     title: "Data Analytics Job Simulation",
     issuer: "Deloitte (Forage)",
-    link: "https://www.theforage.com/simulations/deloitte/data-analytics",
+    link: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_68ffc51040b7c3d93bcff081_1765793045182_completion_certificate.pdf",
     image: deloitteImg,
   },
   {
+    title: "Introduction to Model Context Protocol",
+    issuer: "Anthropic",
+    link: "https://verify.skilljar.com/c/94u3pcy3oggh",
+    image: mcpIntroImg,
+  },
+
+  {
+    title: "Model Context Protocol: Advanced Topics",
+    issuer: "Anthropic",
+    link: "https://verify.skilljar.com/c/5mfze4jzvti8",
+    image: mcpAdvancedImg,
+  },
+
+  {
     title: "Software Engineering Job Simulation",
     issuer: "Quantium (Forage)",
-    link: "https://www.theforage.com/simulations/quantium/software-engineering",
+    link: "https://www.theforage.com/completion-certificates/32A6DqtsbF7LbKdcq/jhiG2W9K8KLZK8nXP_32A6DqtsbF7LbKdcq_68ffc51040b7c3d93bcff081_1765970561137_completion_certificate.pdf",
     image: quantiumImg,
   },
   {
     title: "DSA in C++",
     issuer: "Udemy",
-    link: "https://www.udemy.com/certificate/UC-dsa-cpp-tanmay/",
+    link: "https://www.udemy.com/certificate/UC-189cc61b-b9c9-48b4-9bec-9ca1b74e34cb/",
     image: cppUdemyImg,
   },
   {
     title: "Generative AI Certificate",
     issuer: "upGrad & Microsoft",
-    link: "https://www.upgrad.com/generative-ai-certificate/",
+    link: "https://www.upgrad.com/lxp/learner/certificate/program/683738fd19a53cc4d50e3b84",
     image: microsoftGenAiImg,
   },
   {
     title: "React JS Course",
     issuer: "Scaler",
-    link: "https://www.scaler.com/topics/course/react-js/",
+    link: "https://moonshot.scaler.com/s/sl/aQDKKun41A?_gl=1*15954iw*_gcl_au*MTg3NDQ5ODk1MC4xNzYyMDE5MDA1*FPAU*MTg3NDQ5ODk1MC4xNzYyMDE5MDA1*_ga*MTQ0MjcxOTcxLjE3NDIzODExMzU.*_ga_53S71ZZG1X*czE3NjIwMTkwMDQkbzQyJGcxJHQxNzYyMDE5MDUyJGoxMSRsMCRoNjIxNjYwNjQw",
     image: scalerReactImg,
   },
+  
 ];
 
 export const SOCIALS = [

@@ -63,14 +63,13 @@ export default function Experience() {
           }}
         >
           <FlowingMenu
-            items={certificationItems}
-            speed={18}
-            textColor="var(--text)"
-            bgColor="transparent"
-            marqueeBgColor="var(--brass)"
-            marqueeTextColor="#090C14"
-            borderColor="var(--line)"
-          />
+  items={certificationItems}
+  speed={15}
+  textColor="#ffffff"
+  marqueeBgColor="#ffffff"
+  marqueeTextColor="#090d16"
+  borderColor="#263342"
+/>
         </div>
       </Reveal>
     </section>

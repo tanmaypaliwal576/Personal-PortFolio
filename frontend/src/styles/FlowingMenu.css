@@ -1,25 +1,56 @@
+/* =========================================
+   FLOWING MENU WRAPPER
+========================================= */
+
 .menu-wrap {
   width: 100%;
   height: 100%;
   overflow: hidden;
   border-radius: 4px;
+
+  /* FORCE TRANSPARENT */
+  background: transparent !important;
+  background-color: transparent !important;
 }
+
+/* =========================================
+   MENU
+========================================= */
 
 .menu {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
   height: 100%;
+
   margin: 0;
   padding: 0;
+
+  /* FORCE TRANSPARENT */
+  background: transparent !important;
+  background-color: transparent !important;
 }
+
+/* =========================================
+   MENU ITEM
+========================================= */
 
 .menu__item {
   flex: 1;
+
   position: relative;
   overflow: hidden;
+
+  min-height: 64px;
+
   border-top: 1px solid var(--line);
+
+  /* FORCE TRANSPARENT */
+  background: transparent !important;
+  background-color: transparent !important;
+
   transition: border-color 0.3s ease;
-  min-height: 72px;
 }
 
 .menu__item:first-child {
@@ -30,98 +61,190 @@
   border-color: var(--brass);
 }
 
+/* Remove any possible pseudo-element backgrounds */
+.menu__item::before,
+.menu__item::after {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* =========================================
+   MENU LINK
+========================================= */
+
 .menu__item-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+
   width: 100%;
-  padding: 0 24px;
+  height: 100%;
+
+  padding: 0 18px;
+
   position: relative;
   z-index: 1;
+
   cursor: pointer;
+
   text-decoration: none;
   white-space: nowrap;
+
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(15px, 2vw, 22px);
+
+  font-size: clamp(13px, 1.05vw, 15px);
+
   letter-spacing: -0.01em;
-  transition: color 0.3s ease, padding-left 0.3s ease;
+
+  /* FORCE TRANSPARENT */
+  background: transparent !important;
+  background-color: transparent !important;
+
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.menu__item-link:hover {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 .menu__item:hover .menu__item-link {
   color: var(--brass-bright);
 }
 
+/* =========================================
+   ARROW
+========================================= */
+
 .menu__item-arrow {
   color: var(--text-dim);
-  transition: transform 0.3s ease, color 0.3s ease;
+
   flex-shrink: 0;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .menu__item:hover .menu__item-arrow {
   color: var(--brass-bright);
-  transform: translate(4px, -4px);
+
+  transform: translate(3px, -3px);
 }
+
+/* =========================================
+   HOVER MARQUEE
+========================================= */
 
 .marquee {
   position: absolute;
+
   inset: 0;
+
   width: 100%;
   height: 100%;
+
   z-index: 2;
+
   pointer-events: none;
+
+  /* Hidden below the row */
   transform: translate3d(0, 101%, 0);
-  background: linear-gradient(135deg, var(--brass) 0%, var(--brass-bright) 100%) !important;
-  box-shadow: 0 0 20px rgba(79, 214, 200, 0.25);
+
+  /* THIS IS THE ONLY BACKGROUND */
+  background: linear-gradient(
+    135deg,
+    var(--brass) 0%,
+    var(--brass-bright) 100%
+  ) !important;
+
   display: flex;
   align-items: center;
+
   overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(79, 214, 200, 0.25);
 }
 
+/* =========================================
+   MARQUEE INNER
+========================================= */
+
 .marquee__inner-wrap {
-  height: 100%;
   width: 100%;
+  height: 100%;
+
   display: flex;
   align-items: center;
+
   overflow: hidden;
 }
 
 .marquee__inner {
   display: flex;
   align-items: center;
+
   position: relative;
-  height: 100%;
+
   width: fit-content;
+  height: 100%;
+
   will-change: transform;
 }
 
 .marquee__part {
   display: flex;
   align-items: center;
+
   flex-shrink: 0;
+
   height: 100%;
+
+  background: transparent !important;
 }
+
+/* =========================================
+   MARQUEE TEXT
+========================================= */
 
 .marquee span {
   white-space: nowrap;
+
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(15px, 2vw, 22px);
+
+  font-size: clamp(13px, 1.05vw, 15px);
+
   line-height: 1;
-  padding: 0 1vw;
-  color: #090C14 !important;
+
+  padding: 0 0.8vw;
+
+  color: #090c14 !important;
+
   letter-spacing: -0.01em;
 }
 
+/* =========================================
+   MARQUEE IMAGE
+========================================= */
+
 .marquee__img {
-  width: 120px;
-  height: 52px;
-  margin: 0 1.2rem;
-  border-radius: 8px;
+  width: 90px;
+  height: 42px;
+
+  margin: 0 0.8rem;
+
+  border-radius: 6px;
+
   border: 1px solid rgba(9, 12, 20, 0.18);
-  box-shadow: 0 4px 14px rgba(9, 12, 20, 0.3);
+
+  box-shadow: 0 3px 10px rgba(9, 12, 20, 0.25);
+
   background-size: cover;
   background-position: center;
+
   flex-shrink: 0;
 }
