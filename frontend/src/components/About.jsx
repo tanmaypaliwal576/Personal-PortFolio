@@ -29,14 +29,12 @@ function Stack() {
   );
 }
 
+
 export default function About() {
   return (
     <>
       <section id="about" className="section">
-        <Reveal className="section-head">
-          <p className="section-kicker">About</p>
-          <h2 className="section-title">A little about how I work</h2>
-        </Reveal>
+        
 
         <div className="about-grid">
           <Reveal className="about-side" delay={40}>
@@ -72,7 +70,7 @@ export default function About() {
               </div>
               <div>
                 <dt>Focus</dt>
-                <dd>Full-stack web development</dd>
+                <dd>Full-stack Web Development</dd>
               </div>
               <div>
                 <dt>Currently</dt>

@@ -8,6 +8,16 @@ import {
   GitBranch,
 } from "lucide-react";
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+
+import cppUdemyImg from "../assets/certificates/cpp-udemy.jpg";
+import deloitteImg from "../assets/certificates/deloitte.jpg";
+import quantiumImg from "../assets/certificates/quantium.jpg";
+import microsoftGenAiImg from "../assets/certificates/microsoft-genai.jpg";
+import scalerReactImg from "../assets/certificates/scaler-react.jpg";
+
 export const NAV_ITEMS = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
@@ -18,10 +28,10 @@ export const NAV_ITEMS = [
 ];
 
 export const STATS = [
-  { label: "shipped projects", value: 6, suffix: "" },
-  { label: "CGPA", value: 8.2, suffix: "/10" },
-  { label: "roles held", value: 2, suffix: "" },
-  { label: "based in", value: 0, suffix: "Indore", isText: true },
+  { label: "projects built", value: 6, suffix: "+" },
+  { label: "CGPA", value: 8.63, suffix: "/10" },
+  { label: "technologies", value: 15, suffix: "+" },
+  { label: "certifications", value: 10, suffix: "+" },
 ];
 
 export const SKILL_GROUPS = [
@@ -120,15 +130,40 @@ export const EDUCATION = [
 ];
 
 export const CERTIFICATIONS = [
-  "Data Analytics Job Simulation — Deloitte",
-  "Software Engineering Job Simulation — Quantium (Forage)",
-  "DSA in C++ — Udemy",
-  "Generative AI Certificate — upGrad & Microsoft",
-  "React JS Course — Scalar",
+  {
+    title: "Data Analytics Job Simulation",
+    issuer: "Deloitte (Forage)",
+    link: "https://www.theforage.com/simulations/deloitte/data-analytics",
+    image: deloitteImg,
+  },
+  {
+    title: "Software Engineering Job Simulation",
+    issuer: "Quantium (Forage)",
+    link: "https://www.theforage.com/simulations/quantium/software-engineering",
+    image: quantiumImg,
+  },
+  {
+    title: "DSA in C++",
+    issuer: "Udemy",
+    link: "https://www.udemy.com/certificate/UC-dsa-cpp-tanmay/",
+    image: cppUdemyImg,
+  },
+  {
+    title: "Generative AI Certificate",
+    issuer: "upGrad & Microsoft",
+    link: "https://www.upgrad.com/generative-ai-certificate/",
+    image: microsoftGenAiImg,
+  },
+  {
+    title: "React JS Course",
+    issuer: "Scaler",
+    link: "https://www.scaler.com/topics/course/react-js/",
+    image: scalerReactImg,
+  },
 ];
 
 export const SOCIALS = [
-  { href: "https://github.com/tanmaypaliwal576", label: "GitHub", Icon: Mail },
-  { href: "https://www.linkedin.com/in/tanmay-paliwal-3506bb38b", label: "LinkedIn", Icon: Mail },
-  { href: "mailto:tanmaypaliwal12345@gmail.com", label: "Email", Icon: Mail },
+  { href: "https://github.com/tanmaypaliwal576", label: "GitHub", Icon: FaGithub },
+  { href: "https://www.linkedin.com/in/tanmay-paliwal-3506bb38b", label: "LinkedIn", Icon: FaLinkedin },
+  { href: "mailto:tanmaypaliwal12345@gmail.com", label: "Email", Icon: FaEnvelope },
 ];

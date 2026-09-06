@@ -108,12 +108,12 @@ function Scene3D() {
 /* ------------------------------------------------------------------ */
 const NODES = [
   { id: "n1", x: 60, y: 70, r: 5, label: "React" },
-  { id: "n2", x: 210, y: 40, r: 4, label: "Node" },
-  { id: "n3", x: 320, y: 130, r: 6, label: "Mongo" },
+  { id: "n2", x: 210, y: 40, r: 4, label: "Node.js" },
+  { id: "n3", x: 320, y: 130, r: 6, label: "MongoDB" },
   { id: "n4", x: 150, y: 190, r: 4, label: "Express" },
   { id: "n5", x: 280, y: 250, r: 4, label: "Git" },
   { id: "n6", x: 40, y: 260, r: 4, label: "C++" },
-  { id: "n7", x: 360, y: 300, r: 5, label: "JS" },
+  { id: "n7", x: 360, y: 300, r: 5, label: "DSA" },
 ];
 
 const LINKS = [
@@ -307,7 +307,6 @@ export default function Hero({ onNavigate }) {
         </div>
       </section>
 
-      <Ticker />
     </>
   );
 }
