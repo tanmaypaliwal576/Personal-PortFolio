@@ -296,7 +296,7 @@ export default function Hero({ onNavigate }) {
               </Magnetic>
               <Magnetic
                 as="a"
-                href="./data/Resume.pdf "
+                href="/Resume.pdf"
                 download="Tanmay_Paliwal_Resume.pdf"
                 className="btn btn-resume"
               >
