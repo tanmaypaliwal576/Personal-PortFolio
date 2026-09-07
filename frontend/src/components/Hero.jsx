@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { STATS } from "../data/portfolioData";
 import { Magnetic } from "./Navbar";
+import { Download, Mail, ArrowUpRight } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
 /*  Count-Up Hook                                                       */
@@ -286,10 +287,21 @@ export default function Hero({ onNavigate }) {
             </p>
             <div className="hero-actions">
               <Magnetic className="btn btn-primary" onClick={() => onNavigate("work")}>
-                See the work
+                <span>See the work</span>
+                <ArrowUpRight size={16} className="btn-icon" />
               </Magnetic>
               <Magnetic className="btn btn-ghost" onClick={() => onNavigate("contact")}>
-                Get in touch
+                <Mail size={16} className="btn-icon" />
+                <span>Get in touch</span>
+              </Magnetic>
+              <Magnetic
+                as="a"
+                href="./data/Resume.pdf "
+                download="Tanmay_Paliwal_Resume.pdf"
+                className="btn btn-resume"
+              >
+                <Download size={16} className="btn-icon" />
+                <span>Download Resume</span>
               </Magnetic>
             </div>
           </div>
