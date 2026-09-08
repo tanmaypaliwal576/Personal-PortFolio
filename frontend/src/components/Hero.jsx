@@ -280,10 +280,7 @@ export default function Hero({ onNavigate }) {
             </h1>
             <h2 className="hero-role">Full-stack web developer, building at the meeting point of design and logic.</h2>
             <p className="hero-bio">
-              Aspiring software engineer with a strong foundation in MERN
-              development, data analytics and problem-solving. B.Tech
-              Computer Science student in Indore, currently open to new
-              opportunities.
+              Aspiring software engineer with a strong foundation in MERN development, data analytics, and problem-solving. I enjoy transforming ideas into intuitive digital experiences while continuously exploring new technologies and building meaningful projects.
             </p>
             <div className="hero-actions">
               <Magnetic className="btn btn-primary" onClick={() => onNavigate("work")}>

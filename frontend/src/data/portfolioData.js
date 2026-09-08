@@ -50,8 +50,8 @@ export const PROJECTS = [
   {
     index: "A",
     title: "Huddle",
-    desc: "Real-time MERN chat app with instant messaging, secure auth and a clean, responsive interface.",
-    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+    desc: "Real-time MERN chat application with secure authentication, instant messaging, and Socket.io-powered communication, featuring a responsive and intuitive user interface.",
+    tags: ["Arcjet", "Node.js", "MongoDB", "Socket.io"],
     link: "https://huddle-orgg.netlify.app/",
     size: "large",
   },
@@ -59,8 +59,8 @@ export const PROJECTS = [
   {
     index: "B",
     title: "Prospector",
-    desc: "AI-powered prospecting platform designed to help discover and manage potential leads.",
-    tags: ["AI", "React"],
+    desc: "AI-powered lead discovery platform for finding, researching, and managing high-potential prospects.",
+    tags: ["AI", "React","Node.js","MongoDB"],
     link: "https://prospector-ai.netlify.app/",
     size: "small",
   },
@@ -68,8 +68,8 @@ export const PROJECTS = [
   {
     index: "C",
     title: "TaskLane",
-    desc: "Collaboration and classroom management platform for organizing tasks, assignments, communication and team-based workflows.",
-    tags: ["React", "Node.js", "MongoDB"],
+    desc: "A collaborative classroom platform inspired by Google Classroom, designed to bring assignments, tasks, communication, and student-teacher workflows into one organized workspace.",
+    tags: ["React", "Node.js", "MongoDB","Express"],
     link: "https://tasklane-org.netlify.app/",
     size: "large",
   },
@@ -77,8 +77,8 @@ export const PROJECTS = [
   {
     index: "D",
     title: "OpsMind",
-    desc: "AI-powered operations assistant with RAG capabilities for intelligent information retrieval and assistance.",
-    tags: ["AI", "RAG"],
+    desc: "AI operations assistant using RAG to deliver intelligent, context-aware answers from organizational knowledge.",
+    tags: ["AI", "RAG","React","MongoDB"],
     link: "https://opsmindrag.netlify.app/",
     size: "small",
   },
@@ -86,7 +86,7 @@ export const PROJECTS = [
   {
     index: "E",
     title: "Caffinity",
-    desc: "A premium coffee-brand site with a polished UI, product showcase and smooth motion throughout.",
+    desc: "Premium coffee-brand experience with polished product presentation, responsive design, and smooth interactions.",
     tags: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://caffinity.onrender.com",
     size: "small",
@@ -95,8 +95,8 @@ export const PROJECTS = [
   {
     index: "F",
     title: "Selective Repeat ARQ Simulator",
-    desc: "Interactive visual simulator for the Selective-Repeat ARQ networking protocol — packets, ACKs and retransmission, live.",
-    tags: ["JavaScript", "HTML", "CSS"],
+    desc: "An interactive networking laboratory that brings Selective Repeat ARQ to life, visualizing packets, acknowledgements, retransmissions, and protocol behavior in real time.",
+    tags: ["HTML", "CSS","JavaScript"],
     link: "https://selectiverepeatarq.vercel.app/",
     size: "large",
   },
@@ -104,18 +104,18 @@ export const PROJECTS = [
   {
     index: "G",
     title: "YouTube Clone",
-    desc: "A high-fidelity, responsive front-end clone of the YouTube homepage, built from scratch in vanilla JS.",
+    desc: "A high-fidelity YouTube-inspired video platform built from scratch with vanilla JavaScript, featuring a responsive interface, dynamic content browsing, video discovery, navigation, search, and a familiar viewing experience without relying on frameworks.",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://youtube-nine-woad.vercel.app/",
-    size: "small",
+    size: "large",
   },
 
 
   {
     index: "H",
     title: "Global Mart",
-    desc: "Full e-commerce platform — browsing, filtering, cart and checkout, plus an admin panel to manage products.",
-    tags: ["React", "Node.js", "Express", "Arcjet"],
+    desc: "Full-stack e-commerce platform for browsing products, managing carts, and completing purchases with ease.",
+    tags: ["React", "Node.js", "Express","MongoDB"],
     link: "https://global-mart-2ee2.onrender.com",
     size: "small",
   },
@@ -125,21 +125,24 @@ export const EXPERIENCE = [
     role: "Associate L1 - Web Developer Intern",
     org: "Infotact Solutions",
     time: "Feb 2026 — May 2026 · 4 mos · Remote",
-    desc: "Worked as a Web Developer Intern, building and contributing to web development projects using modern web technologies.",
+    desc: "Built and contributed to AI-powered web applications, including Prospector AI and OpsMind, developing intelligent features, responsive interfaces, and real-world workflows using modern web technologies.",
+    link: "https://lnkd.in/p/dunumdQN",
   },
 
   {
     role: "Full Stack Development Intern",
     org: "Future Interns",
     time: "Nov 2025 — Dec 2025",
-    desc: "Contributed to real-world development tasks following Agile practices.",
+    desc: "Developed full-stack web applications and features through hands-on projects, working across frontend and backend technologies while following Agile development practices.",
+    link: "https://www.linkedin.com/posts/tanmay-paliwal-3506bb38b_internship-futureinterns-gratitude-activity-7394008137994821632-Wv82?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGAIvywBww40EbN_gVkfOBdg5BcYHrqerh8",
   },
 
   {
     role: "Python Instructor",
     org: "Samyak Computer Classes",
     time: "Jun 2024 — Dec 2024",
-    desc: "Taught Python fundamentals and problem-solving to students.",
+    desc: "Taught Python programming and problem-solving to 50+ students through practical exercises, helping beginners build strong programming fundamentals and confidence in coding.",
+    link: "",
   },
 ];
 

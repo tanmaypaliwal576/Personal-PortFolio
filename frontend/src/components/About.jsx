@@ -2,6 +2,8 @@ import React from "react";
 import { GraduationCap } from "lucide-react";
 import { EDUCATION, SKILL_GROUPS } from "../data/portfolioData";
 import { Reveal } from "./Navbar";
+import Lanyard from "./Lanyard";
+import MagicBento from "./MagicBento";
 
 function Stack() {
   return (
@@ -11,20 +13,9 @@ function Stack() {
         <h2 className="section-title">Tools I reach for</h2>
       </Reveal>
 
-      <div className="stack-list">
-        {SKILL_GROUPS.map((g, i) => {
-          const Icon = g.icon;
-          return (
-            <Reveal className="stack-row" key={g.label} delay={i * 40}>
-              <div className="stack-row-label">
-                <Icon size={16} />
-                <span>{g.label}</span>
-              </div>
-              <p className="stack-row-items">{g.items.join(",  ")}</p>
-            </Reveal>
-          );
-        })}
-      </div>
+      <Reveal delay={40}>
+        <MagicBento items={SKILL_GROUPS} />
+      </Reveal>
     </section>
   );
 }
@@ -38,7 +29,14 @@ export default function About() {
 
         <div className="about-grid">
           <Reveal className="about-side" delay={40}>
-            <div className="monogram">TP</div>
+            <div className="lanyard-container">
+              <Lanyard
+  position={[0, 0, 26]}
+  gravity={[0, -40, 0]}
+  frontImage="/tanmay-photo.jpeg"
+  imageFit="cover"
+/>
+            </div>
             <div className="status-pill">
               <span className="pulse" /> open to opportunities
             </div>
@@ -46,18 +44,10 @@ export default function About() {
 
           <Reveal className="about-copy" delay={90}>
             <p>
-              I'm a B.Tech Computer Engineering student who likes turning ideas
-              into working software — from real-time chat apps to full
-              e-commerce platforms. Most of my time lives in the MERN stack,
-              though I reach for Python and data tools when a problem calls
-              for it.
+              I’m a B.Tech Computer Engineering student who enjoys turning ideas into working software—from real-time chat applications to full-stack e-commerce platforms. I primarily work with the MERN stack, while also using Python and data-focused tools when the problem calls for them.
             </p>
             <p>
-              I care about the small decisions: how a page loads, how a form
-              responds, how a system holds up once real people start using it.
-              Outside of building, I've also taught Python to students who were
-              just starting out — a reminder that clarity matters as much as
-              cleverness.
+I care about the details that make software better: how a page loads, how a form responds, and how a system performs when real users rely on it. I’ve also taught Python to students who were just getting started, which strengthened my belief that good software—and good engineering—starts with clarity.
             </p>
             <dl className="kv-grid">
               <div>
